@@ -16,3 +16,7 @@ func Add(a ...int) (sum int) {
 	}
 	return sum
 }
+
+func Sub(a, b int) int {
+	return a - b
+}
