@@ -3,5 +3,9 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("git learning")
+	Print("git learning")
+}
+
+func Print(a ...interface{}) {
+	fmt.Println(a...)
 }
