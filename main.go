@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"net/http"
+)
 
 func main() {
 	Print("git learning")
@@ -22,4 +25,8 @@ func Sub(a ...int) (sub int) {
 		sub -= i
 	}
 	return a[0] + sub
+}
+
+func Handler(request http.Request) http.Response {
+	return http.Response{}
 }
