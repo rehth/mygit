@@ -17,6 +17,9 @@ func Add(a ...int) (sum int) {
 	return sum
 }
 
-func Sub(a, b int) int {
-	return a - b
+func Sub(a ...int) (sub int) {
+	for _, i := range a[1:] {
+		sub -= i
+	}
+	return a[0] + sub
 }
